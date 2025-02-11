@@ -20,7 +20,7 @@ function App() {
 
   return (
     <section>
-      <h1>Data product</h1>
+      <h1 className="text-2xl text-sky-500">Data product</h1>
       <ul>
         {data?.products?.length > 0 ? (
           data.products.map((item: any) => (
