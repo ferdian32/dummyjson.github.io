@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await fetch("https://dummyjson.com/products");
+        const response = await fetch(import.meta.env.VITE_BASE_URL);
         const result = await response.json();
         setData(result);
       } catch (error) {
